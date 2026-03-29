@@ -17,11 +17,11 @@ DEVICE_PATH := device/xiaomi/peridot
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := peridot
-PRODUCT_NAME := twrp_peridot
+PRODUCT_NAME := pb_peridot
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := RedmiTurbo3
 PRODUCT_MANUFACTURER := Xiaomi
