@@ -22,4 +22,4 @@ PRODUCT_MAKEFILES := $(LOCAL_DIR)/pb_peridot.mk
 COMMON_LUNCH_CHOICES := \
     pb_peridot-user \
     pb_peridot-userdebug \
-    bp_peridot-eng
+    pb_peridot-eng
