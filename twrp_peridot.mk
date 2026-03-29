@@ -1,16 +1,23 @@
 #
 # Copyright (C) 2023 The Android Open Source Project
 #
+#
 # SPDX-License-Identifier: Apache-2.0
 #
-
-DEVICE_PATH := device/xiaomi/peridot
-
-# Inherit from device.mk configuration
-$(call inherit-product, $(DEVICE_PATH)/device.mk)
+# Copyright (C) 2021-2023 The OrangeFox Recovery Project
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
 
 # Release name
 PRODUCT_RELEASE_NAME := peridot
+
+DEVICE_PATH := device/xiaomi/peridot
+
+# Inherit from peridot  device
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
+
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := peridot
